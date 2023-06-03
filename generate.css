@@ -1,0 +1,107 @@
+#layoutSidenav_content form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #layoutSidenav_content form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #layoutSidenav_content form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #layoutSidenav_content form div > * {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 10px;
+  }
+  
+
+  #add-btn, #dec-btn {
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+}
+#add-btn:hover, #dec-btn:hover {
+  background-color: #ccc;
+}
+
+
+
+#generate-btn {
+
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#generate-btn:hover {
+  background-color: #0062cc;
+}
+
+ #text-boxes {
+    display: flex;
+  
+ 
+    
+  }
+
+  #text-boxes input {
+    margin-bottom: 10px;
+  }
+  
+  /* Add custom styles for the loading spinner */
+.loadingSpinner {
+  display: none; /* Hide the spinner by default */
+  /* Add your custom styles for the loading spinner here */
+  /* Example styles */
+  width: 40px;
+  height: 40px;
+  border: 4px solid #007bff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#loadingSpinner {
+  font-size: 24px; /* adjust the size as needed */
+}
+
+.fa-spinner {
+  margin-right: 5px; /* add spacing between the icon and text */
+}
+
+#loadingModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the background color and transparency */
+  z-index: 9999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
